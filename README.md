@@ -28,19 +28,19 @@
 
 3.    Name the symfony component?
 
-->    symfony/routing
-      symfony/serializer
-      symfony/validator
-      symfony/yaml
-      symfony/dependency-injection
-      symfony/error-handler
-      symfony/http-foundation
-      symfony/event-dispatcher
-      symfony/translation
-      symfony/console
-      symfony/filesystem
-      symfony/finder
-      symfony/process
+            symfony/routing
+            symfony/serializer
+            symfony/validator
+            symfony/yaml
+            symfony/dependency-injection
+            symfony/error-handler
+            symfony/http-foundation
+            symfony/event-dispatcher
+            symfony/translation
+            symfony/console
+            symfony/filesystem
+            symfony/finder
+            symfony/process
       
 4.    What is Drupal console?
 
