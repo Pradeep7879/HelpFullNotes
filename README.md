@@ -5,6 +5,7 @@
 1.    How many files are required for Views?
 
 ->    Each view uses a minimum of two templates:
+
       The first template is "views-view.html.twig". 
           This template is used for all views and contains the layout for the view. (view content, header, footer, exposed form and attachments)
 
