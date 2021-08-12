@@ -71,3 +71,16 @@
 
                   Content entities (users, nodes, taxonomy terms, ...)
                   Configuration entities (content types, fields, views, all configuration settings)
+                  
+7.    What is migration, and required modules?
+
+            Core Migrate modules:-
+               1.   Migrate
+               2.   Migrate Drupal (Provides the capabilities needed to migrate configuration and content from a Drupal source site to Drupal 8.)
+               3.   Migrate Drupal UI(Provides an user interface (at /upgrade) for performing an upgrade from Drupal 6 or Drupal 7 to Drupal 8.)
+
+            Contributed Migrate modules
+
+            1.    Migrate Upgrade(Provides the migrate-upgrade Drush command for generating the migrations from a Drupal source site.)
+            2.    Migrate Tools(Provides Drush commands and tools such as migrate-status, migrate-import, migrate-rollback, migrate-stop, migrate-reset-status,                       migrate-messages, migrate-fields-source.)
+            3.    Migrate Plus(Provides APIs for grouping migrations as well as a facility to manipulate incoming source data in migrations as well as code examples                   to build custom migrations.)
