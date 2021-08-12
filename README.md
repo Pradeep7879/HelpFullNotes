@@ -46,3 +46,25 @@
 
 ->    Drupal Console is a suite of tools run from a command line interface (CLI) to generate boilerplate code and interact with a Drupal 8 or Drupal 9 installation. 
       It's an essential tool for anyone writing code for Drupal.
+      
+5.    Regular Hooks used in twig list.
+
+->    HOOKS used in Theme:-
+
+            hook_form_system_theme_settings_alter(&$form, FormStateInterface $form_state)
+            hook_preprocess_node(&$variables)
+            hook_preprocess_field(&$variables, $hook)
+            hook_preprocess_HOOK(&$vars)
+                              kirby_preprocess_page_title
+            hook_preprocess_html(&$vars)
+            template_preprocess_paragraph(&$variables)
+            hook_preprocess_page(&$variables)
+            hook_form_system_theme_settings_alter(&$form, FormStateInterface $form_state)
+            
+->    HOOKS used in Module:-
+      
+      hook_form_alter(&$form, FormStateInterface $form_state, $form_id)
+      hook_form_FORMID_alter(&$form, $form_state)
+      Implements hook_ENTITY_TYPE_view_alter(array &$build, EntityInterface $node, EntityViewDisplayInterface $display) for node entities.
+      
+      
