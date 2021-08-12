@@ -67,4 +67,7 @@
       hook_form_FORMID_alter(&$form, $form_state)
       Implements hook_ENTITY_TYPE_view_alter(array &$build, EntityInterface $node, EntityViewDisplayInterface $display) for node entities.
       
-      
+6.    What is content entites and configuration entites?
+
+->    Content entities (users, nodes, taxonomy terms, ...)
+      Configuration entities (content types, fields, views, all configuration settings)
