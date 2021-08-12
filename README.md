@@ -70,4 +70,5 @@
 6.    What is content entites and configuration entites?
 
 ->    Content entities (users, nodes, taxonomy terms, ...)
-      Configuration entities (content types, fields, views, all configuration settings)
+
+   Configuration entities (content types, fields, views, all configuration settings)
