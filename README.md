@@ -47,7 +47,11 @@
 ->    Drupal Console is a suite of tools run from a command line interface (CLI) to generate boilerplate code and interact with a Drupal 8 or Drupal 9 installation. 
       It's an essential tool for anyone writing code for Drupal.
       
-5.    Regular Hooks used in twig list.
+5.    What is composer?
+
+->    Composer is used to manage or download the dependencies of modlues.      
+      
+6.    Regular Hooks used in twig list.
 
 ->    HOOKS used in Theme:-
 
@@ -67,12 +71,12 @@
       hook_form_FORMID_alter(&$form, $form_state)
       Implements hook_ENTITY_TYPE_view_alter(array &$build, EntityInterface $node, EntityViewDisplayInterface $display) for node entities.
       
-6.    What is content entites and configuration entites?
+7.    What is content entites and configuration entites?
 
                   Content entities (users, nodes, taxonomy terms, ...)
                   Configuration entities (content types, fields, views, all configuration settings)
                   
-7.    What is migration, and required modules?
+8.    What is migration, and required modules?
 
             Core Migrate modules:-
                1.   Migrate
@@ -86,7 +90,7 @@
             3.    Migrate Plus(Provides APIs for grouping migrations as well as a facility to manipulate incoming source data in migrations as well as code examples                   to build custom migrations.)
 
 
-8.    What is Cache in drupal 8?
+9.    What is Cache in drupal 8?
       
             Cacheability metadata consists of 3 properties:
 
