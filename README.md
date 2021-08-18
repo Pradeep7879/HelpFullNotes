@@ -104,4 +104,8 @@
             For time-sensitive caching, i.e. time dependencies
 
 
+10.   What is namespace?
 
+            ->    Namespace can be use a make different method for making our code unique. 
+                  and uses PHP classes instead of simple functions. Two classes can have the same name
+                  as they have a different namespace and also namespace as the path to the file.
