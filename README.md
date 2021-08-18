@@ -84,3 +84,20 @@
             1.    Migrate Upgrade(Provides the migrate-upgrade Drush command for generating the migrations from a Drupal source site.)
             2.    Migrate Tools(Provides Drush commands and tools such as migrate-status, migrate-import, migrate-rollback, migrate-stop, migrate-reset-status,                       migrate-messages, migrate-fields-source.)
             3.    Migrate Plus(Provides APIs for grouping migrations as well as a facility to manipulate incoming source data in migrations as well as code examples                   to build custom migrations.)
+
+
+8.    What is Cache in drupal 8?
+      
+            Cacheability metadata consists of 3 properties:
+
+            cache tags
+            For dependencies on data managed by Drupal, like entities & configuration
+
+            cache contexts
+            For variations, i.e. dependencies on the request context
+
+            cache max-age
+            For time-sensitive caching, i.e. time dependencies
+
+
+
