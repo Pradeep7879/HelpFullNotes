@@ -148,4 +148,7 @@
  13.      What is the difference between composer update and composer install..?
  
                   Developers should also always run composer.install anytime they switch Git branches, such as between a production and a staging branch.
-                  The composer update command should only be used to update to new versions of libraries, and the composer.lock file should always be committed after running composer update
+                  The composer update command should only be used to update to new versions of libraries, and the composer.lock file should always be
+                  committed after running composer update
+                  
+              Finally, any time a developer adds a new dependency to the project, they need to commit both the composer.json file and the composer.lock file to Git.
