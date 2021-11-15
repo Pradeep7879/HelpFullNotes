@@ -140,7 +140,12 @@
                                   https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js: { type: external, minified: true }
            
            
- 12.      What is the difference between composer.json and composer.lock
+ 12.      What is the difference between composer.json and composer.lock..?
             
                   composer.json is updated to show that Drupal is now a dependency of your project
                   composer.lock is created/updated to reflect the current versions of all Composer managed libraries
+                 
+ 13.      What is the difference between composer update and composer install..?
+ 
+                  Developers should also always run composer.install anytime they switch Git branches, such as between a production and a staging branch.
+                  The composer update command should only be used to update to new versions of libraries, and the composer.lock file should always be committed after running composer update
