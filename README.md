@@ -109,3 +109,35 @@
             ->    Namespace can be use a make different method for making our code unique. 
                   and uses PHP classes instead of simple functions. Two classes can have the same name
                   as they have a different namespace and also namespace as the path to the file.
+                  
+            
+ 11.  How to Disabling Aggregation for specific CSS or JS?
+ 
+             ->    By default, multiple local files will be aggregated where possible. 
+                   To disable this for a file, set its 'preprocess' flag to false.
+                   
+                   cuddly-slider:
+                    version: 1.x
+                    js:
+                      js/cuddly-slider.js: {preprocess: false}
+                    dependencies:
+                      - core/jquery
+                      - core/drupalSettings
+                     
+          -------------> CDN / externally hosted libraries
+                        
+                              To improve page loading speed.
+                              This can be done by declaring the library to be "external".
+                              
+                              angular.angularjs:
+                                remote: https://github.com/angular/angular.js
+                                version: 1.4.4
+                                license:
+                                  name: MIT
+                                  url: https://github.com/angular/angular.js/blob/master/LICENSE
+                                  gpl-compatible: true
+                                js:
+                                  https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js: { type: external, minified: true }
+           
+           
+ 12.      
