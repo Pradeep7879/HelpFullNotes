@@ -140,4 +140,7 @@
                                   https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js: { type: external, minified: true }
            
            
- 12.      
+ 12.      What is the difference between composer.json and composer.lock
+            
+                  composer.json is updated to show that Drupal is now a dependency of your project
+                  composer.lock is created/updated to reflect the current versions of all Composer managed libraries
