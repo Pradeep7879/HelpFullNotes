@@ -152,3 +152,19 @@
                   committed after running composer update
                   
               Finally, any time a developer adds a new dependency to the project, they need to commit both the composer.json file and the composer.lock file to Git.
+
+14.      What is the USE statement in drupal 8 or 9..?
+      
+                  The technique for providing access to other classes/interfaces in Drupal 8 (and PHP in general) is the “use” statement. 
+                  It allows you to specify what namespace should be used to load a specific class.
+                  Any dependencies registered in methods that you are extending/defining
+                  
+                  Any class that you are extending
+                  Any interface that you are implementing
+                  Any class you are instantiating directly in code
+                  
+15.     What is Namespace in Drupal 8 or 9..?
+
+                  Namespaces are a useful feature of object oriented programming (OOP) that allow you to isolate 
+                  identical class names within different contexts using a syntax that looks a lot like folder hierarchy.
+
