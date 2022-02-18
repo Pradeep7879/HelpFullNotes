@@ -177,12 +177,12 @@
 
 17.   Different Type Of REST Requests (each and every method of REST API along with the collections).
 
-                  Method	Description
+                  Method	      Description
                   
                   GET	      Fetch status line, Response body, Header etc.
                   HEAD	      Same as GET, but only fetch status line and header section
                   POST	      Perform request using request payload mostly in creating a record at the server
                   PUT	      Useful in manipulating/updating the resource using Request payload
-                  DELETE	Deletes information relating to the target resource.
-                  OPTIONS	Describe the communication options for the target resource
+                  DELETE	      Deletes information relating to the target resource.
+                  OPTIONS	      Describe the communication options for the target resource
 
