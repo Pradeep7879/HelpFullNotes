@@ -175,4 +175,14 @@
                   400 – Bad Request      401 – Unauthorised      402 – Payment Required     403 – Forbidden   404 – Not Found     405 – Method Not Allowed
                   500 – Internal Server Error     501 – Not Implemented      502 – Bad Gateway       503 – Service Unavailable     504 – Gateway Timeout
 
+17.   Different Type Of REST Requests (each and every method of REST API along with the collections).
+
+                  Method	Description
+                  
+                  GET	      Fetch status line, Response body, Header etc.
+                  HEAD	      Same as GET, but only fetch status line and header section
+                  POST	      Perform request using request payload mostly in creating a record at the server
+                  PUT	      Useful in manipulating/updating the resource using Request payload
+                  DELETE	Deletes information relating to the target resource.
+                  OPTIONS	Describe the communication options for the target resource
 
