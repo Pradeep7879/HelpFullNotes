@@ -185,4 +185,5 @@
                   PUT	      Useful in manipulating/updating the resource using Request payload
                   DELETE	      Deletes information relating to the target resource.
                   OPTIONS	      Describe the communication options for the target resource
+                  PATCH	      Very much similar to put but it is more like a minor manipulation of resource content
 
