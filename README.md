@@ -167,4 +167,12 @@
 
                   Namespaces are a useful feature of object oriented programming (OOP) that allow you to isolate 
                   identical class names within different contexts using a syntax that looks a lot like folder hierarchy.
+                  
+16.   Rest API Response Codes
+
+                  200 – OK                  201 – Created                  202 – Accepted
+                  307 – Temporary Redirect                  308 – Permanent Redirect                  
+                  400 – Bad Request      401 – Unauthorised      402 – Payment Required     403 – Forbidden   404 – Not Found     405 – Method Not Allowed
+                  500 – Internal Server Error     501 – Not Implemented      502 – Bad Gateway       503 – Service Unavailable     504 – Gateway Timeout
+
 
