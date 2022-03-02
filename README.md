@@ -69,7 +69,19 @@
       
       hook_form_alter(&$form, FormStateInterface $form_state, $form_id)
       hook_form_FORMID_alter(&$form, $form_state)
-      Implements hook_ENTITY_TYPE_view_alter(array &$build, EntityInterface $node, EntityViewDisplayInterface $display) for node entities.
+      hook_ENTITY_TYPE_view_alter(array &$build, EntityInterface $node, EntityViewDisplayInterface $display) for node entities.
+      hook_preprocess_block(&$variables)
+      
+      example for Cache:-
+                        /** * Implements hook_preprocess_block(). */ 
+                        function mymodule_preprocess_block(&$variables) { 
+                          if ($variables['elements']['#id'] == 'search_promo') { 
+                            // Unique cache per search query string. 
+                            $variables['#cache']['contexts'] = ['url.query_args:search']; // Depends on content from a node entity. 
+                            $node = Node::load($variables['promo_nid']); 
+                            $variables['#cache']['tags'] = [$node->getCacheTags(]; 
+                          } 
+                        }
       
 7.    What is content entites and configuration entites?
 
@@ -95,10 +107,18 @@
             Cacheability metadata consists of 3 properties:
 
             cache tags
-            For dependencies on data managed by Drupal, like entities & configuration
+            For dependencies on data managed by Drupal, like entities & configuration.
+            A cache will be invalidated when a cache tag is matched. 
+            example:-   user:10 (invalidates the cache when User entity 10 changes)
+                        node:8 (invalidates the cache when Node entity 8 changes)
+
 
             cache contexts
-            For variations, i.e. dependencies on the request context
+            For variations, i.e. dependencies on the request context.
+            Cache contexts are represented in sets of strings.
+            example:-   user.roles (vary by user’s role)
+                        url (vary by the entire url)
+                        url.path.is_front (vary by the front page)
 
             cache max-age
             For time-sensitive caching, i.e. time dependencies
