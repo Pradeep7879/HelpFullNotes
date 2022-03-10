@@ -207,3 +207,21 @@
                   OPTIONS	      Describe the communication options for the target resource
                   PATCH	      Very much similar to put but it is more like a minor manipulation of resource content
 
+
+18.   How to create Multi-sites..?
+
+            1.    Firstly copy the sites/example.sites.php and overwrite sites/sites.php
+                  sites/sites.php look like 
+                                          $sites['uat.hotair.com.au'] = 'hotair.com.au';
+                                          $sites['uat.hot-air.cn'] = 'hot-air.cn';
+                                          $sites['uat.hotair.kr'] = 'hotair.kr';
+                                          $sites['uat.hot-air.jp'] = 'hot-air.jp';
+                                       
+            2.    Create the folder, for each multi-sites separately and each folder have settings.php, 
+                  settings.local.php, services.yml and modules(optional) folder. if you want to separate 
+                  the configuration, create the files folder and mention path in settings.php.
+
+
+19.   Usefull sites to learn Drupal..?
+
+                  https://www.specbee.com/blogs/improving-drupal-9-performance-modules-best-coding-practices-and-right-server-configuration
