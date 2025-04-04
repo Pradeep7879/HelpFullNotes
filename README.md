@@ -225,3 +225,28 @@
 19.   Usefull sites to learn Drupal..?
 
                   https://www.specbee.com/blogs/improving-drupal-9-performance-modules-best-coding-practices-and-right-server-configuration
+
+20. how to secure site, clickjacking, CSS and other via appropriate HTTP-response-header?
+
+
+    Content-Security-Policy (CSP)
+   • Purpose: Helps prevent a variety    of Content-Security-Policy (CSP)
+   • Purpose: Helps prevent a variety    of attacks such as Cross-Site      Scripting (XSS) and data injection attacks
+Strict-Transport-Security (HSTS)
+• Purpose: Ensures that the browser only communicates with the server over HTTPS, preventing man-in-the? middle attacks.
+Content-Type (This header is included default by drupal)
+• Purpose: Specifies the media type (MIME type) of the resource, ensuring that the content is interpreted correctly by the browser.
+X-Content-Type-Options (This header is included default by drupal)
+45
+• Purpose: Prevents the browser from MIME-sniffing a response away from the declared content-type, which can help prevent certain types of attacks.
+Cache-Control (This header is included default by drupal)
+• Purpose: Controls how, and for how long, the browser and other caches store the response.attacks such as Cross-Site Scripting (XSS) and data injection attacks
+Strict-Transport-Security (HSTS)
+• Purpose: Ensures that the browser only communicates with the server over HTTPS, preventing man-in-the? middle attacks.
+Content-Type (This header is included default by drupal)
+• Purpose: Specifies the media type (MIME type) of the resource, ensuring that the content is interpreted correctly by the browser.
+X-Content-Type-Options (This header is included default by drupal)
+45
+• Purpose: Prevents the browser from MIME-sniffing a response away from the declared content-type, which can help prevent certain types of attacks.
+Cache-Control (This header is included default by drupal)
+• Purpose: Controls how, and for how long, the browser and other caches store the response.
